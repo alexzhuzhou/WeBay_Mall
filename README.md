@@ -1,124 +1,139 @@
-# mmall_learning
+Spanish ES:
 
-MarkDown里面没有图...小伙伴们请看WORD文档呀...
-
-
-
-## 学习必读
-
-### 课程项目环境	
-### 项目代码RUN起来	
-### 课程学习快速通道	
-### 知识点整理及分享	
+Lectura obligatoria para el aprendizaje
+Entorno del proyecto del curso
+Código del proyecto RUN up
+Curso de aprendizaje rápido
+Intercambio de conocimientos
+Entorno del proyecto del curso
+dirección de descarga de centos
 
 
-### 课程项目环境
-1. centos下载地址
 
-    http://coding.imooc.com/learn/questiondetail/24353.html
-    
-    阿里云的下载已经失效，请前往官网下载地址下载。
+IDEA.
+Como puedes ver a continuación, el paquete mysql requerido por mybatis-generator ha sido colocado bajo el paquete de herramientas, así que puedes copiarlo, ponerlo en una ubicación, y modificar la ruta de db.driverLocation a la ruta en la que lo pusiste. Cuando uses mybatis-generator, podrás obtener este archivo desde el grupo QQ compartido, ten en cuenta que debe ser mysql-bin.jar, un paquete jar que termina en bin. También puedes descargarlo de http://learning.happymmall.com/mysql-connector-java-5.1.6-bin.jar. No configure el controlador mysql descargado por maven, debe estar usando -bin.jar yo.
 
-    https://wiki.centos.org/Download
+La siguiente figura, abrir datasource.properties por favor modificar db.url, db.username, db.password para su propia conexión de base de datos mysql necesita url, nombre de usuario, contraseña
 
-    http://vault.centos.org/6.8/isos/x86_64/
+Abra mmall.properties y cámbielo por su propia dirección de servidor ftp, número de cuenta y contraseña. La dirección de devolución de llamada de paypal puede configurarse a través de la penetración en la extranet que se enseña en el curso. Si utiliza la configuración de nginx, modifique el nombre de dominio de soporte del host local. A continuación, modifique el servidor de archivos ftp a su propio prefijo de acceso al servidor ftp. No se recomienda modificar el valor de la sal md5. De lo contrario, la cuenta no podrá conectarse y tendrá que ser restablecida. La dirección de devolución de llamada de paypal también debe ser cambiada por la suya.
 
-2.	如自己找软件比较麻烦，可以访问http://learning.happymmall.com/
+6 y 7 de estas dos capturas de pantalla de la cuenta db, la contraseña, la url, y la ubicación, la ip del servidor ftp, la cuenta, la contraseña, el prefijo del servidor ftp, la dirección de devolución de llamada de paypal, por favor, modifique todo a su propio entorno de servicios correspondiente.
 
-3.	如自己配置比较麻烦，可以参考线上配置http://learning.happymmall.com
+Luego despliegue tomcat para que se ejecute en él.
 
-4.	接口文档：http://git.oschina.net/imooccode/happymmallwiki/wikis/home
+Cuenta de administrador: admin Contraseña de administrador: admin
 
-5.	SQL导入，可以通过下载的mmall.sql文件或者从http://learning.happymmall.com/mmall.sql 这里下载sql文件，然后导入到自己的数据库中,可以通过Navicat 数据库客户端工具导入。
+Curso de aprendizaje rápido
+Descargue el código fuente del curso en MU.com, descomprímalo y descargue el código fuente en los siguientes pasos.
+Cómo entrar en el grupo de intercambio técnico del curso QQ En primer lugar, entrar en el sitio web del curso (un punto y dos es un grupo de intercambio técnico del curso QQ diferente), haga clic en el curso, como se muestra en la figura, en el grupo debe llenar la información de verificación, cada información de verificación sólo se puede utilizar una vez.
+Paypal: acoplamiento específico de paypal cuando varios documentos, etc., la url es relativamente larga, especialmente a todos cotejados. Visite http://learning.happymmall.com/alipaydoc.html esta URL.
 
-6.	课程QQ群分享的资料，这里的资料都是我分享和小伙伴们分享的，有用哟。 http://learning.happymmall.com/QQ%E5%AD%A6%E4%B9%A0%E7%BE%A4%E5%A4%A7%E5%AE%B6%E5%85%B1%E4%BA%AB%E7%9A%84useful%E6%96%87%E6%A1%A3/
+PPT comando largo: ppt dentro del comando largo también a los socios ordenados. Visite http://learning.happymmall.com/pptcommand.html
 
-7.	Nginx：http://learning.happymmall.com/nginx/ 大家可以访问这个网址，这里可以下载Nginx的Linux/Mac/Windows的版本，还有一期课程线上的配置文件。
+Mapa mental del primer curso: http://learning.happymmall.com/happymmallv1.svg
 
-8.	Tomcat： http://learning.happymmall.com/tomcat/ 请来这里下载windows、linux/mac 下的tomcat7
-如果配置nginx+ftp服务+tomcat来做图片服务器，访问不到，请重点参考此问答 http://coding.imooc.com/learn/questiondetail/9369.html 
+Evolución de la arquitectura del clúster Tomcat y materiales relacionados con el curso avanzado distribuido http://learning.happymmall.com/%E4%BA%8C%E6%9C%9F%E9%9B%86%E7%BE%A4%E5%8F%8A%E7%BC%93%E5%AD%98%E5%88%86% E5%B8%83%E5%BC%8FJava%E7%AB%AF/
 
-9.	自动化发布shell脚本： http://learning.happymmall.com/deploy/ 可以在这里下载到一期课程自动化发布脚本，当然具体的路径还要根据自己的实际项目的环境修改成自己的shell脚本哟
-10.	系统环境变量: http://learning.happymmall.com/env/ 这里给大家整理了防火墙的配置和Linux系统环境变量，当然具体的路径小伙伴们根据自己的实际情况来修改好哟。
-11.	FTP服务:Windows请在 http://learning.happymmall.com/ftpserver/ 下载，Linux请使用yum安装，在Linux下Vsftpd配置请访问 http://learning.happymmall.com/vsftpdconfig/ 另外在配置vsftpd服务的时候，一定要检查创建的ftp目录里面的用户、用户组权限，是否有对应ftpuser用户的权限，如果没有，可以使用chown、chgrp来指定到ftp操作用户。然后通过chmod给予对应ftp用户的读写执行权限。
-12.	Git：请访问 http://learning.happymmall.com/git/ 下载windows和linux/mac 下的git客户端
-13.	JDK：请访问 http://learning.happymmall.com/jdk/ 下载windows和linux/mac 下的JDK 
-14.	Maven：请访问http://learning.happymmall.com/maven/下载windows和linux/mac 下的Maven
+Puntos de conocimiento organizados y compartidos
+Java Building Enterprise E-Commerce Projects from Scratch - QQ Group Sharing Handbook http://www.imooc.com/article/19094
 
-如果Maven默认仓库源比较慢，请修改settings文件，配置上阿里云的Maven仓库源，那个速度还是挺快的。
-15.	MySQL：请访问 http://learning.happymmall.com/mysql/下载windows和linux/mac 下的MySQL，另外里面提供了一期课程mysql的配置文件。
+Java Construcción de un proyecto de comercio electrónico empresarial desde cero - Mapa mental, Índice de conocimientos http://www.imooc.com/article/20193
 
-项目代码RUN起来
-1.	下载sql初始化文件mmall.sql
- 
-2.	保证在已经安装jdk，maven，tomcat，mysql等的环境并配置好
-3.	解压缩源码之后，使用eclipse或者idea导入maven项目
-Eclipse：
- 
-# IDEA：
- 
-4.	如下图，mybatis-generator需要的mysql包已经放在了tools包下，可以copy出来，放到某个位置，并修改 db.driverLocation的路径到你放的路径。使用mybatis-generator的时候就ok啦~也可以在QQ群共享里拿到这个文件，注意一定是mysql-bin.jar，以bin结尾的jar包。还可以通过http://learning.happymmall.com/mysql-connector-java-5.1.6-bin.jar
-这里下载到。不要配置maven下载的mysql驱动，一定是使用-bin.jar哟。
+El proceso de evolución de la arquitectura de los grandes proyectos y los puntos a tener en cuenta http://www.imooc.com/article/17545
 
-5.	如下图，打开datasource.properties请修改db.url、db.username、db.password为自己的mysql数据库连接需要的url、username、password
- 
-6.	打开mmall.properties，修改成自己的ftp服务器地址，账号和密码，支付宝回调的地址可以通过课程中讲的外网穿透进行配置。如果用nginx配置的话，请修改本机host支持域名。然后修改ftp文件服务器改成自己的ftp服务器的访问前缀。MD5的salt值非常不建议修改。否则账号就登录不进去啦，还需要重置。支付宝回调地址也要改成自己的。
- 
+La temporada de la búsqueda de empleo - Compartir el currículum y la búsqueda de empleo http://www.imooc.com/article/19998
 
-7.	6和7这两个截图中的db的账号、密码、url、还有location、ftp服务器的ip、账号、密码、ftp服务器的前缀、支付宝回调地址请全部修改成你自己环境服务对应的。
+Java Creación de un proyecto de comercio electrónico empresarial desde cero - Preguntas y respuestas del curso http://www.imooc.com/article/18998
 
-8.	然后部署tomcat运行就可以了。
-9.	管理员账号：admin 管理员密码：admin
+Geely MU Home http://www.imooc.com/t/2705746
 
+Enlace de datos de SpringMVC http://www.imooc.com/learn/558
 
-# 课程学习快速通道
+Curso de un trimestre, Java de cero a proyectos de comercio electrónico de nivel empresarial práctico http://coding.imooc.com/class/96.html
 
-1.	在慕课网课程下载源码，解压缩，下载源码步骤如下。
- 
+Software y configuración del curso http://learning.happymmall.com/
 
-2.	如何进入QQ课程技术交流群
-首先进入课程网址(一期和二期是不同的QQ课程技术交流群)，点击进入课程，
-如图所示，进群的时候一定要填写验证信息，每个验证信息只能使用一次。
- 
+Dirección en línea (si necesita iniciar sesión, inicie sesión en el frontend abierto y en el backend abierto)
 
-3.	支付宝： 具体的支付宝对接时候各种文档等，url比较长，特意给大家整理了。请访问 http://learning.happymmall.com/alipaydoc.html 这个网址。
-4.	PPT长命令：ppt里面的长命令也给小伙伴们整理了。请访问 http://learning.happymmall.com/pptcommand.html 
-5.	一期课程的思维导图：
-http://learning.happymmall.com/happymmallv1.svg
+Frontend http://www.happymmall.com
 
-6.	架构演进之Tomcat集群和分布式进阶课程相关资料
-http://learning.happymmall.com/%E4%BA%8C%E6%9C%9F%E9%9B%86%E7%BE%A4%E5%8F%8A%E7%BC%93%E5%AD%98%E5%88%86%E5%B8%83%E5%BC%8FJava%E7%AB%AF/
+Backend http://admin.happymmall.com
 
- 
-
-
-# 知识点整理及分享
-
-1.	Java从零打造企业级电商项目实战-QQ群分享手记  http://www.imooc.com/article/19094
-2.	Java从零打造企业级电商项目实战-思维导图、知识点索引  http://www.imooc.com/article/20193
-3.	大型项目架构演进过程及思考的点 http://www.imooc.com/article/17545
-4.	找工作的季节之简历及找工作的分享 http://www.imooc.com/article/19998
-5.	Java从零打造企业级电商项目实战-课程问答FAQ http://www.imooc.com/article/18998
-6.	Geely慕课网首页 http://www.imooc.com/t/2705746
-7.	SpringMVC数据绑定 http://www.imooc.com/learn/558
-8.	一期课程，Java从零到企业级电商项目实战 http://coding.imooc.com/class/96.html
-9.	课程软件及配置 http://learning.happymmall.com/
-
-10.	线上地址(如需登录请登录开放前台及开放后台)
-
-前台 http://www.happymmall.com
-
-后台 http://admin.happymmall.com
-
-
-## 开放前台 http://test.happymmall.com
-## 开放后台 http://admintest.happymmall.com
-## 账号：admin 密码：admin
-## (为了更多小伙伴们体验使用，请不要修改密码)
-
-
-# 最后希望小伙伴们学的开心~码的快乐~收获满满~祝大家工作愉快~生活幸福~
-
+Oficina abierta http://test.happymmall.com
+Back Office abierto http://admintest.happymmall.com
+Cuenta: admin Contraseña: admin
+(Por favor, no cambies tu contraseña para que más amigos tuyos la utilicen)
+Por último, espero que todos se diviertan aprendiendo ~ código feliz ~ lleno de cosecha ~ les deseo a todos un trabajo feliz ~ una vida feliz ~
 Geely
 
+
+English ES:
+
+Required Reading for Learning
+Course Project Environment
+Project Code RUN up
+Course Learning Fast Track
+Knowledge Sharing
+Course Project Environment
+centos download address
+
+
+
+IDEA.
+As shown below, the mysql package required by mybatis-generator has been placed under the tools package, you can copy it out, put it in a location, and modify the path of db.driverLocation to the path you put. When you use mybatis-generator, you will be OK~ You can also get this file in the QQ group share, note that it must be mysql-bin.jar, a jar package ending in bin. You can also download it from http://learning.happymmall.com/mysql-connector-java-5.1.6-bin.jar. Do not configure the mysql driver downloaded by maven, must be using -bin.jar yo.
+
+The following figure, open datasource.properties please modify db.url, db.username, db.password for their own mysql database connection needs url, username, password
+
+Open mmall.properties, modify it to your own ftp server address, account number and password, the paypal callback address can be configured through the extranet penetration taught in the course. If you use nginx configuration, please modify the local host support domain name. Then modify the ftp file server to their own ftp server access prefix. md5 salt value is very not recommended to modify. Otherwise, the account will not be logged in, but also need to reset. Paypal callback address should also be changed to their own.
+
+6 and 7 of the two screenshots of the db account, password, url, and location, ftp server ip, account, password, ftp server prefix, paypal callback address, please modify all your own environment services corresponding.
+
+Then deploy tomcat to run on it.
+
+Administrator account: admin Administrator password: admin
+
+Course learning fast track
+Download the source code in the MU course, unzip it, and download the source code steps are as follows.
+How to enter the QQ course technical exchange group First enter the course URL (Phase I and Phase II are different QQ course technical exchange group), click to enter the course, as shown in the figure, into the group must fill in the verification information, each verification information can only be used once.
+Paypal: specific paypal docking when a variety of documents, etc., the url is relatively long, deliberately organized for you. Please visit http://learning.happymmall.com/alipaydoc.html this URL.
+
+PPT long command: ppt inside the long command also to the partners sorted out. Please visit http://learning.happymmall.com/pptcommand.html
+
+The mind map of a course: http://learning.happymmall.com/happymmallv1.svg
+
+Architecture Evolution of Tomcat Cluster and Distributed Advanced course related materials http://learning.happymmall.com/%E4%BA%8C%E6%9C%9F%E9%9B%86%E7%BE%A4%E5%8F%8A%E7%BC%93%E5%AD%98%E5%88%86% E5%B8%83%E5%BC%8FJava%E7%AB%AF/
+
+Knowledge points to organize and share
+Java Building Enterprise E-Commerce Projects from the Ground Up - QQ Group Sharing Notes http://www.imooc.com/article/19094
+
+Java from scratch to build enterprise-level e-commerce projects in practice - mind map, knowledge index http://www.imooc.com/article/20193
+
+Large-scale project architecture evolution process and thinking points http://www.imooc.com/article/17545
+
+The season of job hunting resume and job hunting sharing http://www.imooc.com/article/19998
+
+Java from scratch to build enterprise e-commerce project practice - course Q&A FAQ http://www.imooc.com/article/18998
+
+Geely MU home page http://www.imooc.com/t/2705746
+
+SpringMVC data binding http://www.imooc.com/learn/558
+
+A course, Java from zero to enterprise-level e-commerce projects hands-on http://coding.imooc.com/class/96.html
+
+Course software and configuration http://learning.happymmall.com/
+
+Online address (if you need to login, please login to the open frontend and open backend)
+
+Frontend http://www.happymmall.com
+
+Backend http://admin.happymmall.com
+
+Open Front Office http://test.happymmall.com
+Open backstage http://admintest.happymmall.com
+Account number: admin Password: admin
+(In order to more small partners to experience the use, please do not change the password)
+Finally, I hope that the partners learn happy ~ code happy ~ harvest full ~ wish you all happy work ~ happy life ~
+Geely
+
+Translated with www.DeepL.com/Translator (free version)
 
