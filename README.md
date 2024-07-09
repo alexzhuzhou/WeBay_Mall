@@ -1,12 +1,6 @@
 Spanish ES:
 
-Lectura obligatoria para el aprendizaje
-Entorno del proyecto del curso
-Código del proyecto RUN up
-Curso de aprendizaje rápido
-Intercambio de conocimientos
-Entorno del proyecto del curso
-dirección de descarga de centos
+
 
 
 
